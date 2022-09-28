@@ -1,0 +1,50 @@
+[
+    {
+        "id": "35474b836-01",
+        "name": "English",
+        "book_img": "https://images.unsplash.com/photo-1565022536102-f7645c84354a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZW5nbGlzaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "details": "English is a West Germanic language of the Indo-European language family, with its earliest forms spoken by the inhabitants of early medieval England.",
+        "daily_time": "5AM to 6AM",
+        "total_time": "60 min"
+    },
+    {
+        "id": "35474b836-02",
+        "name": "Math",
+        "book_img": "https://images.unsplash.com/photo-1556302132-40bb13638500?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1hdGh8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "details": "Mathematics is an area of knowledge that includes such topics as numbers (arithmetic and number theory), formulas and related structures (algebra)",
+        "daily_time": "7AM to 7.45AM",
+        "total_time": "45 min"
+    },
+    {
+        "id": "35474b836-03",
+        "name": "physics",
+        "book_img": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGh5c2ljc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "details": "Physics is the natural science that studies matter, its fundamental constituents, its motion and behavior through space and time, and the related entities of energy and force.",
+        "daily_time": "5PM to 6PM",
+        "total_time": "60 min"
+    },
+    {
+        "id": "35474b836-04",
+        "name": "Chemistry",
+        "book_img": "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2hlbWlzdHJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "details": "Chemistry is the scientific study of the properties and behavior of matter.[1] It is a natural science that covers the elements that make up matter to the compounds composed of atoms.",
+        "daily_time": "8PM to 9.30PM",
+        "total_time": "90 min"
+    },
+    {
+        "id": "35474b836-05",
+        "name": "ICT",
+        "book_img": "https://images.unsplash.com/photo-1627762259326-8b15c107b541?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "details": "ICT is a broad subject and the concepts are evolving. It covers any product that will store, retrieve, manipulate, transmit, or receive information ",
+        "daily_time": "9.30PM to 10.30PM",
+        "total_time": "60 min"
+    },
+    {
+        "id": "35474b836-06",
+        "name": "Biology",
+        "book_img": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmlvbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "details": "Biology is the scientific study of life. ... It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent",
+        "daily_time": "10.30PM to 12.00AM",
+        "total_time": "90 min"
+    }
+]

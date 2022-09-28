@@ -1,0 +1,25 @@
+.book-container {
+    background-color: tomato;
+    padding: 15px;
+    height: 650px;
+    border-radius: 20px;
+}
+
+.book-container img {
+    width: 304px;
+    height: 286px;
+    border-radius: 8px;
+    margin: 7px;
+}
+
+.book-container button {
+    width: 318px;
+    height: 36px;
+    background-color: aqua;
+    border: none;
+    border-radius: 30px;
+}
+
+.title-and-time {
+    text-align: left;
+}
