@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import './Time.css';
 
@@ -7,7 +7,7 @@ const Time = (props) => {
 
     const { time } = props;
 
-    const [breakTime, setBreakTime] = useState([]);
+    const [breakTime, setBreakTime] = useState(0);
 
     let totalTime = 0;
 
@@ -18,6 +18,14 @@ const Time = (props) => {
         // totalTime = totalTimeInMin / 60;
 
     }
+
+    useEffect(() => {
+        const storeTime = localStorage.getItem("BreakTime");
+
+        if (storeTime) {
+            setBreakTime(storeTime);
+        }
+    }, [])
 
     // add break time 
 
@@ -45,7 +53,7 @@ const Time = (props) => {
         <div className='time-cart'>
             <div className='profile-container'>
                 <div className='profile'>
-                    <img src="https://images.unsplash.com/photo-1507348899121-a03dab81d98c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VwZXIlMjBzdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img src={require('../../profile-img/masud.jpeg')} alt="" />
                     <div>
                         <h2>Masud Rana</h2>
                         <p><small>Rangpur, Bangladesh</small></p>
@@ -79,7 +87,7 @@ const Time = (props) => {
                 <h2>Reading Details</h2>
                 <div>
                     <p className='total-time'>Reading Time: {totalTime} Min</p>
-                    <p className='total-time'>Break Time: {breakTime}Min</p>
+                    <p className='total-time'>Break Time: {breakTime} Min</p>
                 </div>
             </div>
             <button onClick={notify} className='activity-btn'>Activity Completed</button>
