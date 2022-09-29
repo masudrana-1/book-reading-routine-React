@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Book from '../Book/Book';
 import Time from '../Time/Time';
-import './Routine.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBook } from '@fortawesome/free-solid-svg-icons'
+import './Routine.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
 
 const Routine = () => {
 
