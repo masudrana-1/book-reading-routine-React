@@ -4,10 +4,14 @@ import './Book.css'
 
 const Book = (props) => {
 
-    console.log(props.book)
+    // console.log(props.book)
+
+    const { timeAddToList, book } = props;
+
+    // console.log(timeAddToList);
 
     const { name, book_img, details, daily_time, total_time
-    } = props.book;
+    } = book;
 
     return (
         <div>
@@ -19,7 +23,7 @@ const Book = (props) => {
                     <h5>Daily Time: {daily_time}</h5>
                     <h5>Total time: {total_time}</h5>
                 </div>
-                <button>Add to list</button>
+                <button onClick={() => timeAddToList(book)}>Add to list</button>
             </div>
         </div>
     );

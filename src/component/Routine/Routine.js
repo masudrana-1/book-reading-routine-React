@@ -7,11 +7,29 @@ const Routine = () => {
 
     const [books, setBooks] = useState([]);
 
+    const [time, setTime] = useState([]);
+
+
+
     useEffect(() => {
         fetch('readingBook.json')
             .then(res => res.json())
             .then(data => setBooks(data))
     }, [])
+
+
+    // const previousTime = 0;
+
+    const timeAddToList = (book) => {
+
+        // console.log(book);
+
+        const newTime = [...time, book];
+        setTime(newTime);
+
+        // console.log(setTime)
+
+    };
 
     return (
         <div className='routine-container'>
@@ -24,12 +42,13 @@ const Routine = () => {
                         books.map(book => <Book
                             key={book.id}
                             book={book}
+                            timeAddToList={timeAddToList}
                         ></Book>)
                     }
                 </div>
             </div>
             <div className='time-container'>
-                <Time></Time>
+                <Time time={time}></Time>
             </div>
         </div>
     );

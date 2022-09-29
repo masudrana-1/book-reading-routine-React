@@ -1,3 +1,8 @@
+.time-cart {
+    background-color: rgba(167, 149, 109, 0.594);
+    padding: 20px;
+}
+
 .profile-container {
     padding: 20px 10px;
 }
@@ -16,13 +21,13 @@
 .my-info {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(46, 195, 76);
+    background-color: rgb(223, 205, 185);
     padding: 10px;
     border-radius: 20px;
 }
 
 .my-info div {
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     padding: 0 10px;
     border-radius: 20px;
 }
@@ -34,21 +39,49 @@
 .break-time div {
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: rgb(200, 208, 237);
     padding: 10px;
     border-radius: 20px;
 }
 
 .break-time div p {
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 50px;
 }
 
+
+.reading-details {
+    text-align: left;
+    margin: 50px 0
+}
+
+.total-time {
+    background-color: aliceblue;
+    padding: 10px 30px;
+    margin: 5px 20px;
+    border-radius: 20px;
+}
+
 .activity-btn {
-    background-color: cornflowerblue;
+    background-color: rgb(214, 117, 38);
     height: 40px;
     width: 280px;
     border: none;
     border-radius: 30px;
+    color: aliceblue;
+}
+
+.activity-btn:hover {
+    background-color: rgb(217, 56, 11);
+}
+
+
+@media screen and (max-width: 450px) {
+    .time-cart {
+        margin: 10px;
+        background-color: rgb(171, 176, 179);
+        padding: 20px;
+        border-radius: 30px;
+    }
 }
