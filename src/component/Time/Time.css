@@ -1,0 +1,54 @@
+.profile-container {
+    padding: 20px 10px;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.my-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(46, 195, 76);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.my-info div {
+    background-color: aqua;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.break-time {
+    text-align: left;
+}
+
+.break-time div {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.break-time div p {
+    background-color: brown;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.activity-btn {
+    background-color: cornflowerblue;
+    height: 40px;
+    width: 280px;
+    border: none;
+    border-radius: 30px;
+}
