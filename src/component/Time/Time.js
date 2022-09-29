@@ -5,15 +5,22 @@ const Time = (props) => {
 
     const { time } = props;
 
-    // const totalTime = time.map(t => console.log(t));
+    // console.log(time);
 
-    // for (const t in time) {
-    //     const previousTime = 0;
+    // time.map(x => console.log(x));
 
-    //     previousTime = previousTime + t.total_time;
+    // let breakTimes = break => {console.log(break)};
 
-    //     console.log(previousTime)
-    // }
+    let totalTime = 0;
+
+    for (const readingTime of time) {
+
+        totalTime = totalTime + parseInt(readingTime.total_time);
+    }
+
+    console.log(totalTime);
+
+
 
 
     return (
@@ -53,8 +60,8 @@ const Time = (props) => {
             <div className='reading-details'>
                 <h2>Reading Details</h2>
                 <div>
-                    <p className='total-time'>Reading Time: { }</p>
-                    <p className='total-time'>Break Time: </p>
+                    <p className='total-time'>Reading Time: {totalTime} min</p>
+                    <p className='total-time'>Break Time: { }</p>
                 </div>
             </div>
             <button className='activity-btn'>Activity Completed</button>

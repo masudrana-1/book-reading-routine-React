@@ -21,7 +21,7 @@ const Book = (props) => {
                     <h3>Book Name: {name}</h3>
                     <p>{details}</p>
                     <h5>Daily Time: {daily_time}</h5>
-                    <h5>Total time: {total_time}</h5>
+                    <h5>Total time: {total_time} min</h5>
                 </div>
                 <button onClick={() => timeAddToList(book)}>Add to list</button>
             </div>
