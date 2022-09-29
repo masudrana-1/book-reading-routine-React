@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Time.css'
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import './Time.css';
+
 
 const Time = (props) => {
 
@@ -19,20 +19,27 @@ const Time = (props) => {
 
     }
 
+    // add break time 
 
     const addBreak = (breakTime) => {
         setBreakTime(breakTime);
-        setLocalStorage(breakTime);
+        setBreakTimeToDB(breakTime);
         // console.log(b)
     }
 
-    const setLocalStorage = (breakTime) => {
+    const setBreakTimeToDB = (breakTime) => {
         let localStorages = {};
 
         localStorages = breakTime;
 
-        localStorage.setItem("localStorages", JSON.stringify(localStorages));
+        localStorage.setItem("BreakTime", JSON.stringify(localStorages));
     }
+
+    // show toast 
+
+    const notify = () => toast("Activity Completed Sucessfylly");
+
+
 
     return (
         <div className='time-cart'>
@@ -75,7 +82,7 @@ const Time = (props) => {
                     <p className='total-time'>Break Time: {breakTime}Min</p>
                 </div>
             </div>
-            <button className='activity-btn'>Activity Completed</button>
+            <button onClick={notify} className='activity-btn'>Activity Completed</button>
         </div >
     );
 };
