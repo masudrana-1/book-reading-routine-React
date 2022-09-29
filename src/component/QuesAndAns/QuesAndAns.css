@@ -1,0 +1,26 @@
+.first-ques {
+    text-align: left;
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 20px;
+}
+
+.second-ques {
+    text-align: left;
+    background-color: rgb(106, 218, 42);
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 20px;
+}
+
+.third-ques {
+    text-align: left;
+    background-color: rgb(15, 95, 207);
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 20px;
+}

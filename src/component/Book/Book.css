@@ -6,7 +6,7 @@
 }
 
 .book-container img {
-    width: 304px;
+    width: 290px;
     height: 286px;
     border-radius: 8px;
     margin: 7px;
@@ -15,9 +15,14 @@
 .book-container button {
     width: 318px;
     height: 36px;
-    background-color: aqua;
+    background-color: rgb(217, 92, 38);
     border: none;
     border-radius: 30px;
+    color: aliceblue;
+}
+
+.book-container button:hover {
+    background-color: rgb(237, 39, 4);
 }
 
 .title-and-time {

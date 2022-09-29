@@ -44,9 +44,10 @@
     border-radius: 20px;
 }
 
-.break-time div p {
+.break-time div button {
     background-color: rgb(255, 255, 255);
     padding: 10px;
+    border: none;
     border-radius: 50px;
 }
 

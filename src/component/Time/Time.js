@@ -1,27 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Time.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Time = (props) => {
 
     const { time } = props;
 
-    // console.log(time);
-
-    // time.map(x => console.log(x));
-
-    // let breakTimes = break => {console.log(break)};
+    const [breakTime, setBreakTime] = useState([]);
 
     let totalTime = 0;
 
     for (const readingTime of time) {
 
         totalTime = totalTime + parseInt(readingTime.total_time);
+
+        // totalTime = totalTimeInMin / 60;
+
     }
 
-    console.log(totalTime);
+
+    // const addBreakTime = () => {
+    //     const breakTime
+    // }
 
 
 
+    const addBreak = (b) => {
+        setBreakTime(b);
+        setLocalStorage(b);
+        // console.log(b)
+    }
+
+    const setLocalStorage = (b) => {
+        let localStorages = {};
+
+        localStorages = b;
+
+        localStorage.setItem("localStorages", JSON.stringify(localStorages));
+    }
 
     return (
         <div className='time-cart'>
@@ -51,21 +68,21 @@ const Time = (props) => {
             <div className='break-time'>
                 <h2>Take a break</h2>
                 <div>
-                    <p>5m</p>
-                    <p>10m</p>
-                    <p>15m</p>
-                    <p>20m</p>
+                    <button onClick={() => { addBreak(5) }}>5m</button>
+                    <button onClick={() => { addBreak(10) }}>10m</button>
+                    <button onClick={() => { addBreak(15) }}>15m</button>
+                    <button onClick={() => { addBreak(20) }}>20m</button>
                 </div>
             </div>
             <div className='reading-details'>
                 <h2>Reading Details</h2>
                 <div>
-                    <p className='total-time'>Reading Time: {totalTime} min</p>
-                    <p className='total-time'>Break Time: { }</p>
+                    <p className='total-time'>Reading Time: {totalTime} Min</p>
+                    <p className='total-time'>Break Time: {breakTime}Min</p>
                 </div>
             </div>
             <button className='activity-btn'>Activity Completed</button>
-        </div>
+        </div >
     );
 };
 
