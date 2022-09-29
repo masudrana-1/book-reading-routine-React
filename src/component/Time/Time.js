@@ -20,22 +20,16 @@ const Time = (props) => {
     }
 
 
-    // const addBreakTime = () => {
-    //     const breakTime
-    // }
-
-
-
-    const addBreak = (b) => {
-        setBreakTime(b);
-        setLocalStorage(b);
+    const addBreak = (breakTime) => {
+        setBreakTime(breakTime);
+        setLocalStorage(breakTime);
         // console.log(b)
     }
 
-    const setLocalStorage = (b) => {
+    const setLocalStorage = (breakTime) => {
         let localStorages = {};
 
-        localStorages = b;
+        localStorages = breakTime;
 
         localStorage.setItem("localStorages", JSON.stringify(localStorages));
     }
@@ -44,7 +38,7 @@ const Time = (props) => {
         <div className='time-cart'>
             <div className='profile-container'>
                 <div className='profile'>
-                    <img src="../../profile-img/ZEZiR2FYeg.jpg" alt="" />
+                    <img src="https://images.unsplash.com/photo-1507348899121-a03dab81d98c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VwZXIlMjBzdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                     <div>
                         <h2>Masud Rana</h2>
                         <p><small>Rangpur, Bangladesh</small></p>
