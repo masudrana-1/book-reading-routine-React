@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Book from '../Book/Book';
 import Time from '../Time/Time';
 import './Routine.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
 
 const Routine = () => {
 
@@ -34,8 +36,8 @@ const Routine = () => {
     return (
         <div className='routine-container'>
             <div>
-                <h1 className='title'>Book Reading Routine</h1>
-                <h3 className='title'>Select Today's Book</h3>
+                <h1 className='title'><FontAwesomeIcon icon={faBook}></FontAwesomeIcon> Book Reading Routine</h1>
+                <h3 className='select'>Select Today's Book</h3>
                 <div className='books-container'>
 
                     {

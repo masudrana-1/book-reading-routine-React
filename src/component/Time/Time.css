@@ -1,6 +1,7 @@
 .time-cart {
     background-color: rgba(167, 149, 109, 0.594);
     padding: 20px;
+    height: 714px;
 }
 
 .profile-container {
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 
 }
 
@@ -22,6 +24,11 @@
 }
 
 .profile div h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.profile div p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -69,8 +76,9 @@
 .total-time {
     background-color: aliceblue;
     padding: 10px 30px;
-    margin: 5px 20px;
+    margin: 15px 20px;
     border-radius: 20px;
+
 }
 
 .activity-btn {
@@ -89,7 +97,7 @@
 
 @media screen and (max-width: 450px) {
     .time-cart {
-        margin: 10px;
+        margin: 30px;
         background-color: rgb(171, 176, 179);
         padding: 20px;
         border-radius: 30px;
